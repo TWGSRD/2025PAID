@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon 賣家成長服務 - 專業服務商合作夥伴</title>
+    <title>服務商專屬優惠禮包 - 智造在台灣6.0 & 亞馬遜新銳品牌加速器</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-51B3QLRMX5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-51B3QLRMX5');
+    </script>
     <style>
         * {
             margin: 0;
@@ -12,7 +21,7 @@
         }
         
         body {
-            font-family: 'Amazon Ember', 'Arial', 'Microsoft JhengHei', sans-serif;
+            font-family: 'Arial', 'Microsoft JhengHei', sans-serif;
             line-height: 1.6;
             color: #161D26;
             background-color: #FFFFFF;
@@ -41,10 +50,15 @@
             text-align: center;
         }
         
+        .amazon-logo {
+            height: 40px;
+            width: auto;
+        }
+        
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #F5F3EF 0%, #FFFFFF 100%);
-            padding: 80px 0;
+            padding: 60px 0;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -56,7 +70,7 @@
         }
         
         .hero h1 {
-            font-size: 52px;
+            font-size: 48px;
             font-weight: bold;
             color: #161D26;
             margin-bottom: 20px;
@@ -65,36 +79,34 @@
         
         .hero .highlight {
             color: #FF6200;
-            font-size: 56px;
+            font-size: 52px;
         }
         
         .hero-subtitle {
-            font-size: 26px;
+            font-size: 24px;
             color: #161D26;
             margin-bottom: 40px;
-            max-width: 900px;
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            font-weight: 300;
         }
         
-        .professional-note {
-            font-size: 18px;
+        .reminder-text {
+            font-size: 16px;
             color: #161D26;
-            background: linear-gradient(135deg, #FFF3E0 0%, #FFFFFF 100%);
-            padding: 25px 30px;
-            border-radius: 15px;
-            border-left: 5px solid #FF6200;
-            margin: 30px auto;
-            line-height: 1.6;
-            max-width: 900px;
-            box-shadow: 0 5px 20px rgba(22, 29, 38, 0.08);
+            background-color: #FFF3E0;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-left: 4px solid #FF6200;
+            margin: 20px auto;
+            line-height: 1.5;
+            max-width: 800px;
         }
         
         /* Navigation */
         .nav-section {
             background-color: #FFFFFF;
-            padding: 50px 0;
+            padding: 40px 0;
             border-bottom: 2px solid #F5F3EF;
         }
         
@@ -102,163 +114,173 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 15px;
             margin-bottom: 20px;
-            max-width: 1000px;
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+        }
+        
+        .nav-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            width: 100%;
         }
         
         .nav-tab {
             background-color: #F5F3EF;
             color: #161D26;
-            padding: 18px 25px;
+            padding: 15px 20px;
             border: none;
-            border-radius: 30px;
+            border-radius: 25px;
             cursor: pointer;
-            font-size: 17px;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: bold;
             transition: all 0.3s ease;
-            min-width: 140px;
-            height: 65px;
+            min-width: 120px;
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            box-shadow: 0 3px 10px rgba(22, 29, 38, 0.05);
         }
         
         .nav-tab:hover, .nav-tab.active {
             background-color: #FF6200;
             color: #FFFFFF;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(255, 98, 0, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 98, 0, 0.3);
         }
         
         /* Service Provider Cards */
         .providers-section {
             background-color: #F5F3EF;
-            padding: 80px 0;
+            padding: 60px 0;
         }
         
         .providers-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 40px;
-            margin-top: 50px;
+            gap: 30px;
+            margin-top: 40px;
         }
         
         .provider-card {
             background-color: #FFFFFF;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 8px 30px rgba(22, 29, 38, 0.08);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(22, 29, 38, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid rgba(245, 243, 239, 0.8);
+        }
+        
+        .provider-left {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .provider-right {
+            display: flex;
+            flex-direction: column;
         }
         
         .provider-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 50px rgba(22, 29, 38, 0.12);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(22, 29, 38, 0.15);
         }
         
         .provider-header {
             display: flex;
             align-items: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #F5F3EF;
+            margin-bottom: 20px;
         }
         
         .provider-logo {
-            width: 90px;
-            height: 90px;
+            width: 80px;
+            height: 80px;
             object-fit: contain;
-            margin-right: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(22, 29, 38, 0.1);
+            margin-right: 20px;
+            border-radius: 10px;
         }
         
         .provider-name {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: bold;
             color: #161D26;
         }
         
         .offer-section {
-            margin: 30px 0;
-            padding: 25px;
-            background: linear-gradient(135deg, #F5F3EF 0%, #FFFFFF 100%);
-            border-radius: 15px;
-            border-left: 6px solid #FF6200;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #F5F3EF;
+            border-radius: 10px;
+            border-left: 5px solid #FF6200;
         }
         
         .offer-title {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: bold;
             color: #FF6200;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
         
         .offer-description {
-            font-size: 17px;
+            font-size: 16px;
             color: #161D26;
-            line-height: 1.7;
+            line-height: 1.5;
             white-space: pre-line;
         }
         
         .offer-image {
             width: 100%;
-            max-width: 400px;
+            max-width: 300px;
             height: auto;
-            margin: 20px 0;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(22, 29, 38, 0.1);
+            margin: 15px 0;
+            border-radius: 10px;
         }
         
         .contact-section {
-            margin-top: 30px;
-            padding: 25px;
+            margin-top: 20px;
+            padding: 15px;
             background-color: #161D26;
-            border-radius: 15px;
+            border-radius: 10px;
             color: #FFFFFF;
         }
         
         .contact-title {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             color: #FF6200;
         }
         
         .contact-info {
-            font-size: 16px;
-            margin-bottom: 8px;
+            font-size: 14px;
+            margin-bottom: 5px;
         }
         
         .company-intro {
-            margin: 25px 0;
-            padding: 25px;
-            background: linear-gradient(135deg, #F5F3EF 0%, #FFFFFF 100%);
-            border-radius: 15px;
-            font-size: 16px;
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #F5F3EF;
+            border-radius: 10px;
+            font-size: 14px;
             color: #161D26;
-            line-height: 1.7;
-            border: 1px solid rgba(245, 243, 239, 0.8);
+            line-height: 1.5;
         }
         
         .qr-code {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             object-fit: contain;
-            margin: 15px 0;
-            border-radius: 8px;
+            margin: 10px 0;
         }
         
         /* Footer */
         .footer {
             background-color: #161D26;
-            padding: 50px 0;
+            padding: 40px 0;
             text-align: center;
             color: #FFFFFF;
         }
@@ -266,15 +288,24 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero h1 {
-                font-size: 40px;
+                font-size: 36px;
             }
             
             .hero .highlight {
-                font-size: 44px;
+                font-size: 40px;
             }
             
             .hero-subtitle {
-                font-size: 22px;
+                font-size: 20px;
+            }
+            
+            .providers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-tabs {
+                flex-direction: column;
+                align-items: center;
             }
             
             .provider-header {
@@ -284,8 +315,35 @@
             
             .provider-logo {
                 margin-right: 0;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
+            
+            .provider-card {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        
+        /* Back to top button */
+        .back-to-top {
+            background-color: #FF6200;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 98, 0, 0.3);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            margin-top: 20px;
+        }
+        
+        .back-to-top:hover {
+            background-color: #e55500;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 98, 0, 0.4);
         }
         
         .hidden {
@@ -326,18 +384,16 @@
         <div class="container">
             <div class="hero-content">
                 <h1>
-                    亞馬遜賣家成長服務<br>
-                    <span class="highlight">專屬服務商優惠方案</span>
+                    智造在台灣6.0 & 亞馬遜新銳品牌加速器2.0<br><br>
+                    <span class="highlight">服務商專屬優惠禮包</span>
                 </h1>
                 <p class="hero-subtitle">
-                    精選優質服務商 提供市場唯一的專屬優惠方案<br>
-                    助力您的業務持續成長與擴展
+                    第三方服務商優惠禮包<br>陪你從開賣準備到 Prime Day業績爆發,<br>助力每一個關鍵時刻
                 </p>
-                <div class="professional-note">
-                    <strong>🎁 優惠啟用流程</strong><br>
-                    1️⃣ 加入亞馬遜賣家成長服務<br>
-                    2️⃣ 獲得專屬優惠密碼<br>
-                    3️⃣ 與服務商聯繫時提供優惠密碼, 即享有專屬優惠
+                <div class="reminder-text">
+                    <strong>溫馨提醒:</strong><br>
+                    聯繫服務商時，請主動告知您為 智造在台灣6.0 & 亞馬遜新銳品牌加速器2.0 計畫學員，<br>
+                    即可使用優惠。
                 </div>
             </div>
         </div>
@@ -347,11 +403,19 @@
     <section class="nav-section">
         <div class="container">
             <div class="nav-tabs" id="navigation">
-                <button class="nav-tab active" onclick="filterProviders('金流服務')">金流服務</button>
-                <button class="nav-tab" onclick="filterProviders('FBA審計與賠付')">FBA審計與賠付</button>
-                <button class="nav-tab" onclick="filterProviders('逆物流')">逆物流</button>
-                <button class="nav-tab" onclick="filterProviders('短影音')">短影音</button>
-                <button class="nav-tab" onclick="filterProviders('站外導流')">站外導流</button>
+                <div class="nav-row">
+                    <button class="nav-tab active" onclick="filterProviders('金流服務')">金流服務</button>
+                    <button class="nav-tab" onclick="filterProviders('品牌素材製作')">品牌素材製作</button>
+                    <button class="nav-tab" onclick="filterProviders('商標申請')">商標申請</button>
+                    <button class="nav-tab" onclick="filterProviders('VAT申請')">VAT申請</button>
+                </div>
+                <div class="nav-row">
+                    <button class="nav-tab" onclick="filterProviders('產品合規')">產品合規</button>
+                    <button class="nav-tab" onclick="filterProviders('代營運')">代營運</button>
+                    <button class="nav-tab" onclick="filterProviders('第三方工具軟體')">第三方工具軟體</button>
+                    <button class="nav-tab" onclick="filterProviders('跨境物流')">跨境物流</button>
+                    <button class="nav-tab" onclick="filterProviders('第三方培訓課程')">第三方培訓課程</button>
+                </div>
             </div>
         </div>
     </section>
@@ -377,101 +441,37 @@
         <img class="modal-image" id="modalImage">
     </div>
 
-    <script src="providers_data.js"></script>
     <script>
-        function filterProviders(category) {
-            const grid = document.getElementById('providers-grid');
-            const tabs = document.querySelectorAll('.nav-tab');
-            
-            tabs.forEach(tab => tab.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            grid.innerHTML = '';
-            
-            const filteredProviders = providers.filter(provider => provider.service_type === category);
-            filteredProviders.forEach(provider => {
-                const card = createProviderCard(provider);
-                grid.appendChild(card);
+        // Password protection
+        function checkPassword() {
+            const password = prompt("請輸入密碼:");
+            if (password !== "2026GO") {
+                alert("密碼錯誤");
+                window.location.href = "about:blank";
+                return false;
+            }
+            return true;
+        }
+        
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
         }
-
-        function createProviderCard(provider) {
-            const card = document.createElement('div');
-            card.className = 'provider-card';
-            
-            const logoPath = provider.logo ? `logo/${provider.logo}` : '';
-            const discountImagePath = provider.discount_image ? `discount image/${provider.discount_image}` : '';
-            const qrCodePath = provider.qr_code ? `qrcode/${provider.qr_code}` : '';
-            
-            let discountImagesHtml = '';
-            if (discountImagePath) {
-                discountImagesHtml = `<img src="${discountImagePath}" alt="服務方案" class="offer-image" onclick="openImageModal('${discountImagePath}')" style="cursor: pointer;">`;
-            }
-            
-            let qrCodeHtml = '';
-            if (qrCodePath) {
-                qrCodeHtml = `<img src="${qrCodePath}" alt="聯繫 QR Code" class="qr-code">`;
-            }
-            
-            // 將優惠描述中的網址轉換為超連結
-            let offerDescription = provider.offer_description;
-            if (offerDescription) {
-                offerDescription = offerDescription.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" style="color: #FF6200;">$1</a>');
-            }
-            
-            card.innerHTML = `
-                <div class="provider-header">
-                    ${logoPath ? `<img src="${logoPath}" alt="${provider.company}" class="provider-logo" onclick="openImageModal('${logoPath}')" style="cursor: pointer;">` : ''}
-                    <div class="provider-name">${provider.company}</div>
-                </div>
-                
-                <div class="offer-section">
-                    <div class="offer-title">🎯 專業服務方案</div>
-                    <div class="offer-description">${offerDescription}</div>
-                    ${discountImagesHtml}
-                </div>
-                
-                <div class="contact-section">
-                    <div class="contact-title">📞 聯繫方式</div>
-                    <div class="contact-info">👤 專案經理：${provider.name}</div>
-                    ${provider.email ? `<div class="contact-info">📧 Email：<a href="mailto:${provider.email}" style="color: #FF6200;">${provider.email}</a></div>` : ''}
-                    ${provider.phone ? `<div class="contact-info">📱 聯繫電話：${provider.phone}</div>` : ''}
-                    ${provider.line_id ? `<div class="contact-info">💬 LINE ID：${provider.line_id}</div>` : ''}
-                    ${qrCodeHtml}
-                </div>
-                
-                ${provider.company_intro ? `
-                <div class="company-intro">
-                    <strong>🏢 公司簡介：</strong><br>
-                    ${provider.company_intro}
-                    ${provider.website ? `<br><br>🌐 官方網站：<a href="${provider.website.startsWith('http') ? provider.website : 'https://' + provider.website}" target="_blank" style="color: #FF6200;">${provider.website}</a>` : ''}
-                </div>
-                ` : ''}
-                
-                <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 2px solid #F5F3EF;">
-                    <a href="#navigation" style="color: #FF6200; text-decoration: none; font-size: 18px; display: inline-block; padding: 12px 20px; border-radius: 25px; background: linear-gradient(135deg, #FFF3E0 0%, #FFFFFF 100%); transition: all 0.3s ease; font-weight: 600;" onmouseover="this.style.backgroundColor='#FFE0B2'; this.style.transform='translateY(-2px)'" onmouseout="this.style.backgroundColor='#FFF3E0'; this.style.transform='translateY(0)'">
-                        🔝 返回服務選單
-                    </a>
-                </div>
-            `;
-            
-            return card;
-        }
-
-        function openImageModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            modal.style.display = 'block';
-            modalImg.src = imageSrc;
-        }
-
-        function closeImageModal() {
-            document.getElementById('imageModal').style.display = 'none';
-        }
-
+        
+        // Check password on page load
         window.onload = function() {
-            document.querySelector('.nav-tab').click();
+            if (!checkPassword()) {
+                return;
+            }
+            // Auto-load 金流服務 content after password check
+            setTimeout(function() {
+                document.querySelector('.nav-tab').click();
+            }, 100);
         };
     </script>
+    <script src="providers_complete.js"></script>
 </body>
 </html>
